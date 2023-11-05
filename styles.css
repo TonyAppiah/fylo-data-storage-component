@@ -1,0 +1,203 @@
+/* colors
+
+Gradient - #ffa399 to #ff4d97
+- Pale Blue: #dddbff
+- Grayish Blue: #848794
+- Dark Blue: #1d2c67
+- Very Dark Blue: #0c122c
+*/
+
+* {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+.background-container {
+    background-image: url(./images/bg-mobile.png); 
+    background-size: contain;  
+    font-size: 14px;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;       
+}
+
+
+.container {
+    margin: 0 2rem;
+}
+
+
+.logo-section {
+    background-color: #1d2c67;
+    padding: 2.5rem;
+    border-radius: 10px 100px 10px 10px;
+}
+
+
+.heading-container {
+    margin-bottom: 2rem;
+}
+
+
+.icons-container {
+    display: flex;    
+    gap: 15px;
+}
+
+
+.icon {
+    background-color: #0c122c;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.info-section {
+    background-color: #1d2c67;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    
+}
+
+
+.info-used {
+    color: #dddbff;
+    margin-left: 1rem;
+}
+
+
+.load-bar {
+    background-color: #0c122c81;
+    border-radius: 10px; 
+    margin: 1rem 0;   
+}
+
+
+.load-bar-filled {    
+    width: 70%;
+    background-image: linear-gradient(to right, #ffa399, #ff4d97);
+    border-radius: 10px;
+    border: 3px solid #0c122cde;
+    display: flex;
+    justify-content: end;
+}
+
+
+.load-bar-head {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 2px;
+    
+}
+
+
+.info-left {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.gb-left-container {    
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    top: 62px;    
+}
+
+
+.gb-left-inner-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: .8rem 1.5rem;
+}
+
+
+.gb-amount {
+    color: #0c122c;
+    font-size: 2.5rem;
+   
+}
+
+
+.gb-left {
+    color: #848794;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;    
+}
+
+.gb-0, .gb-1000 {
+    opacity: .7;
+}
+
+
+@media (width > 399px) {
+
+    .background-container {
+       background-color: #0c122c;
+       background-image: url(./images/bg-desktop.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: bottom;
+       justify-content: center;
+    }
+
+
+    .container {
+        display: flex;
+        margin: 0;
+        gap: 2rem;
+        align-items: flex-end;
+    }
+
+
+    .logo-section {
+        padding-right: 10rem;
+    }
+
+
+    .info-section {
+        width: 35rem;
+        height: 10rem;
+        margin: 0;
+    }
+
+
+    .info-used {
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+
+
+    .gb-left-container {
+        translate: 180px -210px;
+        
+    }
+
+
+    .gb-left-container::after {
+        content: '';
+        position: absolute;
+        /* width: 0;
+        height: 0; */
+        border-top: 40px solid #fff;
+        border-left: 40px solid transparent;
+        right: 0;
+        top: 60px;
+    }    
+
+    
+}
